@@ -50,25 +50,27 @@ body {
 .dashboard-buttons {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  margin-bottom: 60px;
+  gap: 30px;
+  margin-bottom: 30px;
 }
-
 .tab-button {
   padding: 10px 20px;
-  border: 2px solid var(--primary);
   background-color: transparent;
   color: var(--primary);
-  border-radius: 8px;
   cursor: pointer;
   font-size: 14px;
   font-weight: 500;
   transition: all 0.3s ease;
+  border: 0px;
+  border-top: 3px solid var(--background);
+  padding: 15px 30px;
+
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 .tab-button:hover {
   background-color: rgba(37, 13, 83, 0.1);
 }
 .tab-button.active {
-  background-color: var(--primary);
-  color: white;
+  border-top: 3px solid var(--primary);
 }
