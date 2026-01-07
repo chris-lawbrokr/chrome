@@ -4,7 +4,12 @@ import './App.css'
 function App() {
   return (
     <div className="app">
-      Hello
+      <div className='app-main'>
+        Main
+      </div>
+      <div className='app-dashboard'>
+        Dashboard
+      </div>
     </div>
   )
 }
