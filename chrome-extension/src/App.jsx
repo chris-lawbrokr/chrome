@@ -7,9 +7,9 @@ function App() {
   return (
     <div className="app">
       <div className='app-main'>
-        {activeTab === 'tab1' && <div>1</div>}
-        {activeTab === 'tab2' && <div>2</div>}
-        {activeTab === 'tab3' && <div>3</div>}
+        {activeTab === 'tab1' && <img src="/dash-1.png" alt="Dashboard 1" className="main-icon" />}
+        {activeTab === 'tab2' && <img src="/dash-2.png" alt="Dashboard 2" className="main-icon" />}
+        {activeTab === 'tab3' && <img src="/dash-3.png" alt="Dashboard 3" className="main-icon" />}
       </div>
       <div className='app-dashboard'>
         <div className='dashboard-buttons'>
@@ -17,19 +17,22 @@ function App() {
             className={`tab-button ${activeTab === 'tab1' ? 'active' : ''}`}
             onClick={() => setActiveTab('tab1')}
           >
-            Tab 1
+            <img src="/dash-1.png" alt="Dashboard 1" className="button-icon" />
+            <span className="button-label">Analytics</span>
           </button>
           <button
             className={`tab-button ${activeTab === 'tab2' ? 'active' : ''}`}
             onClick={() => setActiveTab('tab2')}
           >
-            Tab 2
+            <img src="/dash-2.png" alt="Dashboard 2" className="button-icon" />
+            <span className="button-label">Chat</span>
           </button>
           <button
             className={`tab-button ${activeTab === 'tab3' ? 'active' : ''}`}
             onClick={() => setActiveTab('tab3')}
           >
-            Tab 3
+            <img src="/dash-3.png" alt="Dashboard 3" className="button-icon" />
+            <span className="button-label">Chat</span>
           </button>
         </div>
       </div>
