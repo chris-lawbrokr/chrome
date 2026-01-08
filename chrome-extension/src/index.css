@@ -62,7 +62,8 @@ body {
   font-weight: 500;
   transition: all 0.3s ease;
   border: 0px;
-  border-top: 3px solid var(--background);
+  border-top: 3px solid transparent;
+  /* border-top: 3px solid none var(--background); */
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
   display: flex;
