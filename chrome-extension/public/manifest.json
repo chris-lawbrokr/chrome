@@ -17,5 +17,19 @@
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": ["sidePanel"]
+  "permissions": ["sidePanel", "activeTab", "tabs"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["icon.png", "index.html", "assets/*"],
+      "matches": ["<all_urls>"]
+    }
+  ]
 }
