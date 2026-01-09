@@ -74,13 +74,8 @@ function createFloatingTab() {
   }
   icon.alt = 'Lawbrokr';
 
-  // Create text
-  const text = document.createElement('span');
-  text.textContent = 'Open Lawbrokr';
-
   // Append elements
   floatingTab.appendChild(icon);
-  floatingTab.appendChild(text);
 
   // Add click handler to toggle sidebar
   floatingTab.addEventListener('click', (e) => {
